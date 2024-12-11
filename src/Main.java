@@ -14,6 +14,13 @@ public class Main {
     public static void Multiplication(double a, double b) {
         System.out.println("Multiplication : " + (a * b));
     }
+    public static void Division(double a, double b) {
+        if (b == 0) {
+            System.out.println("Erreur : Division par zéro.");
+        } else {
+            System.out.println("Division : " + (a / b));
+        }
+    }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
