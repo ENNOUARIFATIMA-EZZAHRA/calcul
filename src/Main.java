@@ -1,49 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
 
 
-    public static void Addition(double a, double b) {
-        System.out.println("Addition : " + (a + b));
-    }
-
-    public static void Soustraction(double a, double b) {
-        System.out.println("Soustraction : " + (a - b));
-    }
-
-    public static void Multiplication(double a, double b) {
-        System.out.println("Multiplication : " + (a * b));
-    }
-    public static void Division(double a, double b) {
-        if (b == 0) {
-            System.out.println("Erreur : Division par zéro.");
-        } else {
-            System.out.println("Division : " + (a / b));
-        }
-    }
-    public static void Puissance(double a, double b) {
-        System.out.println("Puissance : " + Math.pow(a, b));
-    }
-    public static void RacineCarrée(double a) {
-        if (a < 0) {
-            System.out.println("Erreur : Racine carrée d'un nombre négatif.");
-        } else {
-            System.out.println("Racine carrée : " + Math.sqrt(a));
-        }
-    }
-
-    public static void Factorielle(int a) {
-        if (a < 0) {
-            System.out.println("Erreur : Factorielle d'un nombre négatif n'existe pas.");
-            return;
-        }
-        int fact = 1;
-        for (int i = 2; i <= a; i++) {
-            fact *= i;
-        }
-        System.out.println("Factorielle : " + fact);
-    }
-
+  
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
