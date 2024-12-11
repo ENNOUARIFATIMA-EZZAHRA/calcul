@@ -7,7 +7,9 @@ public class Main {
         System.out.println("Addition : " + (a + b));
     }
 
-
+    public static void Soustraction(double a, double b) {
+        System.out.println("Soustraction : " + (a - b));
+    }
 
 
     public static void main(String[] args) {
@@ -33,24 +35,24 @@ public class Main {
             s = sc.nextInt();
             if (s !=0) {
                 System.out.print("Donner premier nombre: ");
-                 a = sc.nextDouble();
+                a = sc.nextDouble();
 
                 // For all operations except square root and factorial, ask for a second number
                 System.out.print("Donner deuxième nombre: ");
-                 b = sc.nextDouble();
+                b = sc.nextDouble();
             }
 
 
-                switch (s) {
-                    case 0:
-                        System.out.println("Au revoir!");
-                        break;
-                    case 1:
-                        Addition(a, b);
-                        break;
-                    case 2:
-                        Soustraction(a, b);
-                        break;
+            switch (s) {
+                case 0:
+                    System.out.println("Au revoir!");
+                    break;
+                case 1:
+                    Addition(a, b);
+                    break;
+                case 2:
+                    Soustraction(a, b);
+                    break;
 //                    case 3:
 //                        Multiplication(a, b);
 //                        break;
@@ -61,21 +63,17 @@ public class Main {
 //                        Puissance(a, b);
 //                        break;
 
-                    default:
-                        System.out.println("Choix invalide.");
+                default:
+                    System.out.println("Choix invalide.");
 
-                }
+            }
 
-            }while(s !=0);
+        }while(s !=0);
 
         sc.close();
-        }
-
-    private static void Soustraction(double a, double b) {
     }
 
-    // Close the
-    // scanner after use to avoid resource leak
+    // Close the scanner after use to avoid resource leak
 
 
 }
