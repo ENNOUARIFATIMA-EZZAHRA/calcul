@@ -71,7 +71,10 @@ public class Main {
         sc.close();
         }
 
-        // Close the scanner after use to avoid resource leak
+    private static void Soustraction(double a, double b) {
+    }
+
+    // Close the scanner after use to avoid resource leak
 
 
 }
