@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-  
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -34,43 +34,9 @@ import java.util.Scanner;
             }
 
 
-            switch (s) {
-                case 0:
-                    System.out.println("Au revoir!");
-                    break;
-                case 1:
-                    Addition(a, b);
-                    break;
-                case 2:
-                    Soustraction(a, b);
-                    break;
-                    case 3:
-                        Multiplication(a, b);
-                        break;
-                    case 4:
-                        Division(a, b);
-                        break;
-                    case 5:
-                        Puissance(a, b);
-                        break;
-                case 6:
-                    RacineCarrée(a);
-                    break;
-                case 7:
-                    // Convert a to an integer and call Factorielle method
-                    Factorielle((int) a);
-                    break;
-                default:
-                    System.out.println("Choix invalide.");
 
-            }
-
-        }while(s !=0);
-
-        sc.close();
     }
 
-    // Close the scanner after use to avoid resource leak
-
+    
 
 }
