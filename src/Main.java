@@ -32,7 +32,17 @@ public class Main {
         }
     }
 
-
+    public static void Factorielle(int a) {
+        if (a < 0) {
+            System.out.println("Erreur : Factorielle d'un nombre négatif n'existe pas.");
+            return;
+        }
+        int fact = 1;
+        for (int i = 2; i <= a; i++) {
+            fact *= i;
+        }
+        System.out.println("Factorielle : " + fact);
+    }
 
     public static void main(String[] args) {
 
@@ -86,6 +96,10 @@ public class Main {
                         break;
                 case 6:
                     RacineCarrée(a);
+                    break;
+                case 7:
+                    // Convert a to an integer and call Factorielle method
+                    Factorielle((int) a);
                     break;
                 default:
                     System.out.println("Choix invalide.");
