@@ -21,6 +21,13 @@ public class Main {
             System.out.println("Division : " + (a / b));
         }
     }
+    public static void Puissance(double a, double b) {
+        System.out.println("Puissance : " + Math.pow(a, b));
+    }
+
+
+
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -65,12 +72,12 @@ public class Main {
                     case 3:
                         Multiplication(a, b);
                         break;
-//                    case 4:
-//                        Division(a, b);
-//                        break;
-//                    case 5:
-//                        Puissance(a, b);
-//                        break;
+                    case 4:
+                        Division(a, b);
+                        break;
+                    case 5:
+                        Puissance(a, b);
+                        break;
 
                 default:
                     System.out.println("Choix invalide.");
