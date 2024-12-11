@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Main {
 
 
+    public static void Addition(double a, double b) {
+        System.out.println("Addition : " + (a + b));
+    }
 
 
 
@@ -43,7 +46,7 @@ public class Main {
                         System.out.println("Au revoir!");
                         break;
                     case 1:
-                       
+                        Addition(a, b);
                         break;
                     case 2:
                         Soustraction(a, b);
