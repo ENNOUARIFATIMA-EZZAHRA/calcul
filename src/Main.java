@@ -24,7 +24,13 @@ public class Main {
     public static void Puissance(double a, double b) {
         System.out.println("Puissance : " + Math.pow(a, b));
     }
-
+    public static void RacineCarrée(double a) {
+        if (a < 0) {
+            System.out.println("Erreur : Racine carrée d'un nombre négatif.");
+        } else {
+            System.out.println("Racine carrée : " + Math.sqrt(a));
+        }
+    }
 
 
 
@@ -78,7 +84,9 @@ public class Main {
                     case 5:
                         Puissance(a, b);
                         break;
-
+                case 6:
+                    RacineCarrée(a);
+                    break;
                 default:
                     System.out.println("Choix invalide.");
 
