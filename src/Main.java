@@ -11,7 +11,9 @@ public class Main {
         System.out.println("Soustraction : " + (a - b));
     }
 
-
+    public static void Multiplication(double a, double b) {
+        System.out.println("Multiplication : " + (a * b));
+    }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -53,9 +55,9 @@ public class Main {
                 case 2:
                     Soustraction(a, b);
                     break;
-//                    case 3:
-//                        Multiplication(a, b);
-//                        break;
+                    case 3:
+                        Multiplication(a, b);
+                        break;
 //                    case 4:
 //                        Division(a, b);
 //                        break;
