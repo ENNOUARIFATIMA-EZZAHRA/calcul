@@ -7,8 +7,10 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int s;
-        double a=0,b=0;
+        double a,b;
             System.out.println("-------------Menu------------");
+                    while (true) {
+
             System.out.println("1- Addition (+)");
             System.out.println("2- Soustraction (-)");
             System.out.println("3- Multiplication (*)");
@@ -20,14 +22,42 @@ public class Main {
             System.out.print("Choisir votre choix: ");
             //operateur
             s = sc.nextInt();
-            if (s !=0) {
-                System.out.print("Donner premier nombre: ");
-                a = sc.nextDouble();
+            
+          
+                
+              
 
-                // For all operations except square root and factorial, ask for a second number
-                System.out.print("Donner deuxième nombre: ");
-                b = sc.nextDouble();
+
+            if (s == 0) {
+                System.out.println("Au revoir!");
+                break;
             }
+
+if (s !=0) {
+            System.out.print("Donner premier nombre: ");
+             a = sc.nextDouble();
+
+            // Process the operation based on user choice
+            if (s != 6 && s != 7) {
+                // For all operations except square root and factorial, ask for a second number
+                System.out.print("Donner deuxieme nombre: ");
+                 b = sc.nextDouble();
+
+
+                switch (s) {
+                    case 1:
+                        Addition(a, b);
+                        break;
+                         default:
+                        System.out.println("Choix invalide.");
+                }
+            }
+            
+            }
+                    }
+    }
+    public static void Addition(double a, double b) {
+        System.out.println("Addition : " + (a + b));
     }
 
 }
