@@ -54,6 +54,9 @@ if (s !=0) {
 			case 3:
                         Multiplication(a, b);
                         break;
+			case 4:
+                        Division(a, b);
+                        break;
                          default:
                         System.out.println("Choix invalide.");
                 }
@@ -70,6 +73,13 @@ if (s !=0) {
     }
      public static void Multiplication(double a, double b) {
         System.out.println("Multiplication : " + (a * b));
+    }
+     public static void Division(double a, double b) {
+        if (b == 0) {
+            System.out.println("Erreur : Division par zéro.");
+        } else {
+            System.out.println("Division : " + (a / b));
+        }
     }
 
 }
