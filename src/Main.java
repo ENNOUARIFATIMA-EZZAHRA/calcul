@@ -48,6 +48,9 @@ if (s !=0) {
                     case 1:
                         Addition(a, b);
                         break;
+			case 2:
+                        Soustraction(a, b);
+                        break;
                          default:
                         System.out.println("Choix invalide.");
                 }
@@ -58,6 +61,9 @@ if (s !=0) {
     }
     public static void Addition(double a, double b) {
         System.out.println("Addition : " + (a + b));
+    }
+      public static void Soustraction(double a, double b) {
+        System.out.println("Soustraction : " + (a - b));
     }
 
 }
