@@ -1,16 +1,13 @@
 import java.util.Scanner;
+ 
 
 
-
-
+public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         int s;
         double a=0,b=0;
-
-        do {
-
             System.out.println("-------------Menu------------");
             System.out.println("1- Addition (+)");
             System.out.println("2- Soustraction (-)");
@@ -21,7 +18,6 @@ import java.util.Scanner;
             System.out.println("7- Factorielle");
             System.out.println("0- Quitter");
             System.out.print("Choisir votre choix: ");
-
             //operateur
             s = sc.nextInt();
             if (s !=0) {
@@ -32,11 +28,6 @@ import java.util.Scanner;
                 System.out.print("Donner deuxième nombre: ");
                 b = sc.nextDouble();
             }
-
-
-
     }
-
-
 
 }
