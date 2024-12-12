@@ -51,6 +51,9 @@ if (s !=0) {
 			case 2:
                         Soustraction(a, b);
                         break;
+			case 3:
+                        Multiplication(a, b);
+                        break;
                          default:
                         System.out.println("Choix invalide.");
                 }
@@ -64,6 +67,9 @@ if (s !=0) {
     }
       public static void Soustraction(double a, double b) {
         System.out.println("Soustraction : " + (a - b));
+    }
+     public static void Multiplication(double a, double b) {
+        System.out.println("Multiplication : " + (a * b));
     }
 
 }
