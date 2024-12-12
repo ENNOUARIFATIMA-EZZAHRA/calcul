@@ -36,14 +36,11 @@ public class Main {
 if (s !=0) {
             System.out.print("Donner premier nombre: ");
              a = sc.nextDouble();
-
             // Process the operation based on user choice
             if (s != 6 && s != 7) {
                 // For all operations except square root and factorial, ask for a second number
                 System.out.print("Donner deuxieme nombre: ");
                  b = sc.nextDouble();
-
-
                 switch (s) {
                     case 1:
                         Addition(a, b);
@@ -60,10 +57,20 @@ if (s !=0) {
 			case 5:
                         Puissance(a, b);
                         break;
+
                          default:
                         System.out.println("Choix invalide.");
                 }
             }
+	    else {
+
+                switch (s) {
+                    case 6:
+                        RacineCarrée(a);
+                        break;
+			default:
+                        System.out.println("Choix invalide."); // In case of invalid choice
+                }
             
             }
                     }
@@ -88,5 +95,11 @@ if (s !=0) {
   public static void Puissance(double a, double b) {
         System.out.println("Puissance : " + Math.pow(a, b));
     }
-
+public static void RacineCarrée(double a) {
+        if (a < 0) {
+            System.out.println("Erreur : Racine carrée d'un nombre négatif.");
+        } else {
+            System.out.println("Racine carrée : " + Math.sqrt(a));
+        }
+    }
 }
