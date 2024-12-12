@@ -57,6 +57,9 @@ if (s !=0) {
 			case 4:
                         Division(a, b);
                         break;
+			case 5:
+                        Puissance(a, b);
+                        break;
                          default:
                         System.out.println("Choix invalide.");
                 }
@@ -80,6 +83,10 @@ if (s !=0) {
         } else {
             System.out.println("Division : " + (a / b));
         }
+    
+     }
+  public static void Puissance(double a, double b) {
+        System.out.println("Puissance : " + Math.pow(a, b));
     }
 
 }
