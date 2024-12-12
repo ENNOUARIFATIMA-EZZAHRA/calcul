@@ -68,13 +68,20 @@ if (s !=0) {
                     case 6:
                         RacineCarrée(a);
                         break;
+			case 7:
+                        // Convert a to an integer and call Factorielle method
+                        Factorielle((int) a);
+                        break;
 			default:
                         System.out.println("Choix invalide."); // In case of invalid choice
                 }
             
             }
                     }
+ sc.close();
     }
+    }
+
     public static void Addition(double a, double b) {
         System.out.println("Addition : " + (a + b));
     }
@@ -101,5 +108,16 @@ public static void RacineCarrée(double a) {
         } else {
             System.out.println("Racine carrée : " + Math.sqrt(a));
         }
+    }
+public static void Factorielle(int a) {
+        if (a < 0) {
+            System.out.println("Erreur : Factorielle d'un nombre négatif n'existe pas.");
+            return;
+        }
+        int fact = 1;
+        for (int i = 2; i <= a; i++) {
+            fact *= i;
+        }
+        System.out.println("Factorielle : " + fact);
     }
 }
